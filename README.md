@@ -1,1 +1,12 @@
-# Wordle-Project
+# Wordle Game
+- ## Description
+    - This game is all about *guessing and calculating* all the possibilities.
+    - To play this game all you need to know is *English*
+- ## Features
+    - *Smooth and clean* looking UI.
+    - Game is made interesting by providing *hints*.
+    - Different *notations and colors* provided for right and wrong answers.
+    - Many options can be disabled to make the game hard.
+- ## Tech Stack
+    - Front End(UI and game logic) - `React.js`,`TailwindCSS`
+    - Back End(User authentication and data) - `MongoDB`,`FireBase`
