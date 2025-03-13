@@ -1,0 +1,178 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color:rgb(1, 1, 1);
+  position: relative;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #999;
+  background: black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  caret-color: transparent;
+  outline: none;
+}
+
+.popup {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.popupwin {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #633af5, #0088ff);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: popupFadeIn 0.4s ease-in-out, pulseGlow 1.5s infinite alternate;
+  text-align: center;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes pulseGlow {
+  from {
+    box-shadow: 0 0 10px rgb(119, 80, 173);
+  }
+  to {
+    box-shadow: 0 0 20px rgb(119, 80, 173);
+  }
+}
+
+.new-game-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #280aef;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.new-game-btn:hover {
+  background: #00ffe5;
+  transform: scale(1.05);
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.keyboard {
+  margin-top: 20px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.key.used {
+  background-color: grey;
+  color: white;
+}
+
+.greyed-out {
+  background-color: grey;
+  color: white;
+  pointer-events: none; /* Prevent clicking on greyed-out letters */
+}
+
+.green {
+  background-color: rgb(0, 108, 0);
+  color: white;
+}
+
+.yellow {
+  background-color: rgb(255, 215, 0);
+  color: black;
+}
+
+.grey {
+  background-color: grey;
+  color: white;
+}
